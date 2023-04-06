@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./reset";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0');
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+html, body {
+  height: 100%;
+}

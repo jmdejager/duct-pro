@@ -1,0 +1,20 @@
+:host {
+  width: 0;
+  position:relative;
+
+  .container {
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    transition: all .4s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    max-width: 90vw;
+  }
+
+  .container.open{
+    width: 20rem;
+  }
+}

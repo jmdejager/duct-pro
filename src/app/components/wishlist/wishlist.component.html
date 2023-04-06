@@ -1,0 +1,6 @@
+<div class="container" [class.open]="open$ | async">
+  <ng-container *ngFor="let item of items$ | async">
+
+    <app-wishlist-item [item]="item"></app-wishlist-item>
+  </ng-container>
+</div>

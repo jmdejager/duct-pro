@@ -1,0 +1,43 @@
+:host {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .image {
+    height: 200px;
+    width: 200px;
+    max-width: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 100%;
+    }
+  }
+
+  .name {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  &.minimal {
+    padding: 1rem;
+    flex-direction: row;
+    gap: 1rem;
+
+    .image {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .name {
+      flex: 1 1 auto;
+      padding: 0;
+      text-align: left;
+    }
+  }
+}

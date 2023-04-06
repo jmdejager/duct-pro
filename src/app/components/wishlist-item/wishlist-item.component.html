@@ -1,0 +1,10 @@
+<div class="container" *ngIf="item">
+  <app-product [minimal]="true" [product]="item?.product">
+
+  </app-product>
+
+  {{item?.quantity}}
+
+  <button (click)="add(item)">+</button>
+  <button (click)="remove(item)" >-</button>
+</div>
